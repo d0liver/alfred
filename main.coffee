@@ -64,3 +64,6 @@ rtm.on RTM_EVENTS.MESSAGE, (message) ->
 		rtm.sendMessage \
 			"<@#{message.user}>, Sorry, I'm still pretty dumb and I didn't understand that.",
 			message.channel
+
+http = require 'http'
+http.createServer().listen(3000)
