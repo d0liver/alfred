@@ -7,9 +7,9 @@ gulp.task 'default', ['server']
 gulp.task 'prod-build', ['compile-server']
 
 gulp.task 'compile-server', ->
-	gulp.src './server/*.coffee'
+	gulp.src '*.coffee'
 	.pipe coffee bare: true
-	.pipe gulp.dest './server'
+	.pipe gulp.dest '.'
 
 gulp.task 'server', ->
 	stream = nodemon
